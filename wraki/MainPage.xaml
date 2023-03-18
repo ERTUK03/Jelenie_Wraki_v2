@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wraki.MainPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Input">
+            <MenuFlyoutItem Text="Wczytaj plik z załogami"
+                            Clicked="Wczytaj_zalogi" />
+            <MenuFlyoutItem Text="Wczytaj plik ze startami"
+                            Clicked="Wczytaj_starty" />
+        </MenuBarItem>
+        <MenuBarItem Text="Output">
+            <MenuFlyoutItem Text="Zobacz załogi"
+                            Clicked="Zobacz_zalogi"/>
+            <MenuFlyoutItem Text="Zobacz starty"
+                            Clicked="Zobacz_starty"/>
+            <MenuFlyoutItem Text="Zobacz punktację"
+                            Clicked="Zobacz_punktacje"/>
+        </MenuBarItem>
+        <MenuBarItem Text="Półfinały i finały">
+            <MenuFlyoutItem Text="Stwórz półfinał"
+                            Clicked="Polfinal"/>
+            <MenuFlyoutItem Text="Konfiguracja półfinału"
+                            Clicked="Polfinal_conf"/>
+            <MenuFlyoutItem Text="Stwórz finał"
+                            Clicked="Final"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <ScrollView>
+    </ScrollView>
+
+</ContentPage>
