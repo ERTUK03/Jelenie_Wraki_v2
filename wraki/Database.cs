@@ -10,7 +10,7 @@ namespace wraki
 {
     internal static class Database
     {
-        public readonly static SQLiteConnection conn = new(Path.Combine("C:/Users/ertuk/Desktop", "database.db"));
+        public readonly static SQLiteConnection conn = new(Path.Combine($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}", "database.db"));
 
         public static void Execute(string query)
         {
