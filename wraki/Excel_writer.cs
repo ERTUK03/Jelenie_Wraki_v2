@@ -45,7 +45,7 @@ namespace wraki
                 }
             }
             byte[] bin = excelPackage.GetAsByteArray();
-            string FileName = $"C:/Users/ertuk/Desktop/{nazwa_startu.Replace(":", String.Empty)} {DateTime.Today:d}.xlsx";
+            string FileName = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/{nazwa_startu.Replace(":", String.Empty)} {DateTime.Today:d}.xlsx";
 
             File.WriteAllBytes(FileName, bin);
         }
